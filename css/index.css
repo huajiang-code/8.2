@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header {
+  width: 100%;
+}
+header .nav-img {
+  width: 168px;
+  height: auto;
+  margin: 60px auto;
+}
+header .nav-img img {
+  width: 168px;
+  height: auto;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  width: 240px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+.container .banner {
+  width: 400%;
+  height: 700px;
+  position: relative;
+}
+.container .banner ul {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+.container .banner ul li {
+  width: 25%;
+  height: 700px;
+  float: left;
+}
+.container .banner ul li img {
+  width: 100%;
+  height: 700px;
+}
+.container .banner .banner-num {
+  width: 25%;
+  height: 25px;
+  position: absolute;
+  bottom: 20px;
+}
+.container .banner .banner-num .control {
+  height: 25px;
+  width: 140px;
+  margin: 0 auto;
+}
+.container .banner .banner-num .control ul {
+  height: 25px;
+  width: 140px;
+}
+.container .banner .banner-num .control ul li {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 0 4px;
+  font-size: 16px;
+}
+.container .section1 {
+  width: 100%;
+  height: 200px;
+  padding-top: 50px;
+}
+.container .section1 .section1-left {
+  width: 30%;
+  height: 150px;
+  float: left;
+}
+.container .section1 .section1-left span {
+  width: 250px;
+  display: block;
+  font-size: 39px;
+  font-family: 华文细黑;
+  line-height: 115%;
+}
+.container .section1 .section1-left .span1 {
+  margin-left: 110px;
+}
+.container .section1 .section1-left .span2 {
+  margin-left: 110px;
+}
+.container .section1 .section1-left .line {
+  height: 1px;
+  width: 70px;
+  background-color: #000;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+.container .section1 .section1-right {
+  margin-left: 10%;
+  width: 60%;
+  height: 150px;
+  float: left;
+}
+.container .section1 .section1-right span {
+  display: block;
+  font-family: 微软雅黑;
+  font-size: 16px;
+  color: #878787;
+  margin-bottom: 2px;
+}
+.container .section2 {
+  margin-top: 20px;
+  width: 100%;
+  height: 280px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.container .section2 ul li {
+  width: 380px;
+  height: 240px;
+  float: left;
+  margin-right: 30px;
+}
+.container .section2 ul li img {
+  width: 380px;
+  height: 240px;
+}
+.container .section2 ul li:last-child {
+  margin-right: 0;
+}
+.container .section3 {
+  height: 430px;
+  width: 100%;
+  padding-top: 40px;
+  border-bottom: 7px solid  #ccc;
+}
+.container .section3 ul {
+  height: 390px;
+  width: 100%;
+}
+.container .section3 ul li {
+  width: 206px;
+  float: left;
+  margin-right: 20px;
+  height: 305px;
+}
+.container .section3 ul li img {
+  width: 206px;
+}
+.container .section3 ul li:nth-child(1) {
+  width: 520px;
+}
+.container .section3 ul li:nth-child(1) img {
+  width: 520px;
+}
+.container .section3 ul li:nth-child(4) {
+  margin-right: 0px;
+}
+.container .section3 ul li .section3-content {
+  font-size: 19px;
+  font-family: 微软雅黑;
+}
+.container .section3 ul li .section3-content span {
+  display: block;
+  font-size: 12px;
+  font-family: 微软雅黑;
+}
+footer {
+  width: 100%;
+  height: 100px;
+}
+footer .left {
+  width: 80%;
+  float: left;
+  height: 100px;
+}
+footer .left ul {
+  margin-left: 120px;
+  margin-top: 30px;
+  width: 800px;
+  font-family: Microsoft YaHei;
+  font-weight: normal;
+  font-size: 10px;
+  color: #cccccc;
+}
+footer .left ul li {
+  float: left;
+  margin-right: 40px;
+}
+footer .left ul li:first-child {
+  color: #666666;
+  letter-spacing: 1px;
+  font-family: 微软雅黑;
+}
+footer .left .left-span {
+  font-size: 9px;
+  display: block;
+  width: 350px;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+footer .right {
+  width: 20%;
+  float: left;
+  height: 100px;
+}
+footer .right div {
+  float: left;
+  margin-top: 30px;
+}
+.center {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.active {
+  color: #ccc;
+  border-top: 2px solid #ccc;
+}
+.active1 {
+  background-color: #fff;
+  color: #000!important;
+}

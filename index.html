@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+
+<body>
+
+
+
+    <header>
+        <div class="center">
+            <div class="nav-img">
+                <img src="./imgs/logoslogan.jpg" alt="">
+            </div>
+            <nav>
+                <ul id="nav">
+                    <li class="active"><a href="index.html"> HOME</a></li>
+                    <li><a href="product.html"> PRODUCT</a></li>
+                    <li><a href=""> PROJECT</a></li>
+                    <li><a href="about.html"> ABOUT US</a></li>
+                    <li><a href="contact.html"> CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <div class="container">
+
+
+
+
+        <div class="banner">
+            <ul id="ban">
+                <li><a href="./product.html"> <img src="./imgs/17.jpg" alt=""></a></li>
+                <li><a href="./product.html"> <img src="./imgs/18.jpg" alt=""></a></li>
+                <li><a href="./product.html"> <img src="./imgs/1920-2_smm2.jpg" alt=""></a></li>
+                <li><a href="./product.html"> <img src="./imgs/1920-4_0bhm.jpg" alt=""></a></li>
+            </ul>
+            <div class="banner-num">
+                <div class="control">
+                    <ul id="num">
+                        <li class="active1">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="center">
+
+
+
+            <section class="section1 clearfix">
+                <div class="section1-left">
+                    <span class="span1">COLLECTION</span>
+                    <span class="span2">2020</span>
+                    <div class="line"></div>
+                </div>
+                <div class="section1-right">
+                    <span>A2STONE is the manufacture of natural marble furniture </span>
+                    <span>with our own excellent design team.</span>
+                    <span>We focus on exquisite material and design details, combining texture, </span>
+                    <span>colors and construction to create product that are comfortable and versatile.</span>
+                </div>
+            </section>
+
+
+
+            <section class="section2">
+                <ul class="clearfix">
+                    <li><a href="./product.html"> <img src="./imgs/nu60.jpg" alt=""></a></li>
+                    <li><a href="./product.html"> <img src="./imgs/71s8.jpg" alt=""></a></li>
+                    <li><a href="./product.html"> <img src="./imgs/y6y5.jpg" alt=""></a></li>
+                </ul>
+            </section>
+            <section class="section3">
+                <ul class="clearfix">
+                    <li>
+                        <div class="section3-img">
+                            <a href="./product.html"> <img src="./imgs/553.jpg" alt=""></a>
+                        </div>
+                        <div class="section3-content">
+                            THE 41 st CHINA INTERNATIONAL FURNITURE FAIR
+                            <span>MARCH 2018, GUANGZHOU CHINA</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section3-img">
+                            <a href="./product.html"> <img src="./imgs/220_tpkl.jpg" alt=""></a>
+                        </div>
+                        <div class="section3-content">
+                            SHANGHAI CIFF
+                            <span>SEPTEMBER 2017</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section3-img">
+                            <a href="./product.html"> <img src="./imgs/zj4r.jpg" alt=""></a>
+                        </div>
+                        <div class="section3-content">
+                            ​LAS VEGAS
+                            <span>International Exhibition USA</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="section3-img">
+                            <a href="./product.html"> <img src="./imgs/gww6.jpg" alt=""></a>
+                        </div>
+                        <div class="section3-content">
+                            GUANGZHOU CIFF
+                            <span>MARCH 2017</span>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+        </section>
+
+
+
+
+    </div>
+    <footer>
+        <div class="center clearfix">
+            <div class="left">
+                <ul class="clearfix">
+                    <li>A2STONE CHINA</li>
+                    <li>HOME</li>
+                    <li>PRODUCT</li>
+                    <li>PROJECT</li>
+                    <li>ABOUT US</li>
+                    <li>CONTACT US</li>
+                </ul>
+                <span class="left-span">
+                    <span>Copyright © 2018 </span>
+                    <span>By</span>
+                    <span>2stone</span>
+                    <span>esign Team</span>
+                </span>
+            </div>
+            <div class="right clearfix">
+                <div class="right-img1">
+                    <img src="./imgs/twitter.png" alt="">
+                </div>
+                <div class="right-img2">
+                    <img src="./imgs/facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="./jquery1.7.js"></script>
+    <script>
+        $(function () {
+
+
+            $("#nav li").mousemove(function () {
+                $(this).addClass("active").siblings().removeClass("active");
+            })
+            var width = $(window).width();
+            var index = 0;
+            var time;
+
+           
+            function toRight(value) {
+                $("#ban").animate({
+                    "marginLeft": -width
+                }, value, function () {
+                    $("#ban li").first().appendTo("#ban");
+                    $("#ban").css("marginLeft", 0);
+                })
+                
+                if (index > 3) {
+                    index = 0;
+                }
+                index++;
+                $("#num li").eq(index).addClass("active1").siblings().removeClass("active1");
+            }
+
+            function toLeft(value) {
+                $("#ban li").last().prependTo($("#ban"));
+                $("#ban").css("marginLeft", -width);
+                $("#ban").animate({
+                    "marginLeft": 0
+                }, value);
+                
+                if (index < 0) {
+                    index = 3;
+                }
+                index--;
+                $("#num li").eq(index).addClass("active1").siblings().removeClass("active1");
+
+            }
+
+            function run() {
+                time = setInterval(function () {
+
+                    toRight(1000);
+                    
+                    
+                }, 3000)
+               
+
+            }
+
+
+            run();
+
+
+
+
+            $("#ban").mouseover(function () {
+                clearInterval(time);
+            }).mouseout(function () {
+                run();
+            })
+
+
+            $("#num li").css("cursor","pointer");
+            $("#num li").click(function () {
+                var current = $(this).index();
+
+                var zhi=current-index;
+               
+                
+                if(zhi>0){
+                    var j=0;
+                    for(var i=0;i<zhi;i++){
+                        console.log(index);
+                        toRight(100);
+                    }
+                }
+                if(zhi<0){
+                    zhi=-zhi;
+                    for(var i=0;i<zhi;i++){
+                       toLeft(100);
+                    }
+                }
+                
+
+            })
+
+
+
+
+
+
+
+
+        })
+    </script>
+</body>
+
+</html>
